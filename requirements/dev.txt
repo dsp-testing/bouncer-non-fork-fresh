@@ -8,7 +8,7 @@ asttokens==2.0.5
     # via stack-data
 backcall==0.2.0
     # via ipython
-build==0.8.0
+build==1.0.3
     # via pip-tools
 certifi==2023.5.7
     # via
@@ -42,7 +42,9 @@ idna==2.10
     #   -r requirements/requirements.txt
     #   requests
 importlib-metadata==4.12.0
-    # via pip-sync-faster
+    # via
+    #   build
+    #   pip-sync-faster
 ipdb==0.13.13
     # via -r requirements/dev.in
 ipython==8.12.2
@@ -75,15 +77,13 @@ pastedeploy==2.1.0
     # via
     #   -r requirements/requirements.txt
     #   plaster-pastedeploy
-pep517==0.13.0
-    # via build
 pexpect==4.8.0
     # via ipython
 pickleshare==0.7.5
     # via ipython
 pip-sync-faster==0.0.3
     # via -r requirements/dev.in
-pip-tools==7.1.0
+pip-tools==7.4.0
     # via
     #   -r requirements/dev.in
     #   pip-sync-faster
@@ -104,6 +104,10 @@ pure-eval==0.2.1
     # via stack-data
 pygments==2.15.0
     # via ipython
+pyproject-hooks==1.0.0
+    # via
+    #   build
+    #   pip-tools
 pyramid==2.0.1
     # via
     #   -r requirements/requirements.txt
@@ -125,8 +129,8 @@ tomli==2.0.1
     # via
     #   build
     #   ipdb
-    #   pep517
     #   pip-tools
+    #   pyproject-hooks
 traitlets==5.0.5
     # via
     #   ipython
